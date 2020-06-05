@@ -1,0 +1,449 @@
+ body {
+    font-family: sans-serif;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255, 0, 212, 0.233), rgba(255,0,0,0));
+  }
+
+  .para{
+    align-items: center;
+    text-align: justify;
+    font-size: 20px;
+    font-family: cursive;
+    line-height: 2em;
+    letter-spacing: 0.2em;
+    color: black;
+    padding: 30px;
+  }
+
+  .header{
+    font-style: italic;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 43px;
+    text-shadow: 0 0 20px #fff , 0 0 30px #ff4da6 , 0 0 40px #ff4da6 , 0 0 50px #ff4da6 , 0 0 60px #ff4da6 , 0 0 70px #ff4da6 , 0 0 80px #ff4da6  ;
+    letter-spacing: 0.1em;
+    text-decoration-color: hotpink;
+    color:  #fff;    
+  }
+  .color3{
+    color: rgb(206, 15, 120);
+    text-shadow: 0 0 2px #ff0000 , 0 0 2px #0000ff ; 
+    font-style: italic;
+    font-weight: bold;
+  }
+ 
+  /* ========================title============================================ */
+  .jumbotron{
+    background-color: skyblue;
+  }
+
+  
+  /*======================================== slide1page=============================== */
+
+  * {box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif;}
+  .mySlides {display: none;}
+  img {vertical-align: middle;}
+
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Caption text */
+  .text {
+    color: rgb(146, 7, 81); 
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: skyblue;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: skyblue;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+    /* ===========================slidepage end================================ */
+
+   /* ===============================overall heading============================ */
+  .heading{
+    text-align: center;
+    color: whitesmoke ;
+    background-color: rgb(146, 7, 81); 
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 0 0 3px deeppink;
+    letter-spacing: 0.1em;
+    text-decoration-color: hotpink;
+    
+  } 
+
+
+  /* ==================================NEW ARRIVAL=================================== */
+
+  div.gallery {
+    border: 1px solid #ccc; 
+  }
+
+  div.gallery:shadow {
+    transition: 0.001s;
+
+  }
+  
+  
+   div.gallery:hover {
+    border: 1px solid  rgb(192, 17, 119);
+    box-shadow:  0 0 20px #fff , 0 0 30px #ff4da6 , 0 0 40px #4ddbff , 0 0 50px #f8f5f7;
+    transition: 0.001s;
+  } 
+
+  
+  
+   div.gallery img {
+    width: 100%;
+    height: 100%;
+    transition: 0.001s;
+  }
+  
+  .card{
+    box-shadow: 2px 3px 5px gray; 
+  }
+  .rs{ 
+    margin: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: rgb(138, 41, 228);
+  
+  }
+  
+  .button{
+    outline: 0;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: rgb(146, 7, 81);
+    width: 100%;
+    font-size: 18px;
+  
+  }
+  
+  .button:hover {
+    opacity: 0.7;
+  }
+ 
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  /* ============================about========================================== */
+ 
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  } 
+
+  .about-section{
+    background-image: linear-gradient(rgb(127, 228, 228), grey);
+  }
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid  hotpink;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+   
+   /* ==============================contact=================== */
+
+
+  .contact1{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+
+  }
+  .contact2{
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    color: rgb(244, 249, 250);
+    border-radius: 50px;
+    text-align: center;
+    margin: 5px;
+    line-height: 50px;
+    box-shadow: 1px 4px 2px 2px #dcdde1
+
+  }
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    align-items: center !important;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+      .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  
+
+  .style{
+    font-style: italic;
+    font-family: monospace;
+    color: aqua;
+    text-shadow: 2px 2px 10px gold;
+    font-weight: bold;
+    font-size: 50px;
+  
+  }
+  
+  .head{
+    font-size: 30px;
+    text-shadow: 5px 5px 10px gainsboro;
+    color: rgb(105, 238, 255);
+
+  }
+
+  .deco{
+    box-shadow:  0 0 20px #fff , 0 0 30px #ff4da6 , 0 0 40px #4ddbff , 0 0 50px #f8f5f7;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255, 0, 212, 0.233), rgba(255,0,0,0));
+  }
+
+  /* ======================login===================================================   */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(15, 121, 163, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet );
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+.psw{
+  font-size: 20px;
+  font-style: oblique;
+  font-weight: 900;
+
+  
+}
+
+.para1{
+    align-items: center;
+    text-align: justify;
+    font-size: 20px;
+    font-family: cursive;
+    line-height: 2em;
+    letter-spacing: 0.2em;
+    color: #ff4da6;
+  }
+
+.bg{
+  border-radius: 20px;
+  border-color: #ccc;
+  color: #888;
+}
+
+
+   /* ========================FOOTER=========================== */
+  .color1{
+    font-style: italic;
+    font-size: 30px;
+    text-shadow: 5px 5px 10px gainsboro ;
+    color: rgb(244, 249, 250)
+  
+  }
+  .bgfoot{
+    background-color:  rgb(146, 7, 81);
+    text-align: left;
+    color: ivory;
+    font-style: italic;
+    font-family: monospace;
+    font-weight: bold;
+  
+  }
+  .foot{
+    text-align: left;
+    color: ivory; 
+    margin: 0;
+    padding: 0;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+  } 
+  .footer{
+    height: 50px;
+    width: 50px;
+    background-color: palevioletred;
+    border-radius: 50px;
+    text-align: center;
+    margin: 5px;
+    line-height: 60px;
+    box-shadow: 1px 4px 2px 2px #dcdde1
+  }
+  .a i {
+    transition: all 0.3s linear;
+  }
+  a:hover i{
+    transform: scale(1.2);
+  }
+  .fa-instagram{
+    color: cornsilk;
+  }
+  .fa-youtube{
+    color: cornsilk;
+  }
+  .fa-facebook{
+    color: cornsilk;
+  }
+  .fa-twitter{
+    color: cornsilk;
+  }

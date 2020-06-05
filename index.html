@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =============================title============================================= -->
+  <div class="jumbotron text-center" style="margin-bottom:0"> <br>
+    <br>
+    <br>
+    <img src="img/M.logo.png" alt="" w-90 height="90"></img>
+    <h1 class="header"> <b> MARIA COLLECTION </b></h1> <br></br>
+    <p class="heading"><b>Available all Brands</b></p>
+  </div>
+
+
+  <!-- =============================navbar========================================= -->
+  <!-- Navigation Area Start -->
+  <nav class="navbar navbar-default  navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"> <img src="img/m logo.png" alt="" width="40px" height="30px"> </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#section1">HOME</a></li>
+          <li><a href="#section2">NEW ARRIVAL</a></li>
+          <li><a href="#section3">KID'S WEAR</a></li>
+          <li><a href="#section4">MEN'S WEAR</a></li>
+          <li><a href="women.html">WOMEN'S WEAR</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+
+          <!-- ========================login=================== -->
+          <!-- Button to open the modal login form -->
+          <button class="bg" onclick="document.getElementById('id01').style.display='block'"><img src="img/login.png"
+              alt="" width="35"></button>
+
+          <!-- The Modal -->
+          <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+              title="Close Modal">&times;</span>
+
+            <!-- Modal Content -->
+            <form class="modal-content animate" action="/action_page.php">
+              <div class="deco">
+                <div class="container">
+                  <h1 class="heading">
+                    <center> SIGN IN</center>
+                  </h1>
+                  <label for="uname"><b>Email * </b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+
+                  <label for="uname"><b>Password * </b></label>
+                  <input type="text" placeholder="Enter Password" name="uname" required>
+
+                  <button class="button" type="submit">Login</button>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                  <center><span class="psw">Forgot your <a href="#">password?</a></span></center>
+
+                  <br />
+                  <h2 class="para1">
+                    <center> No account yet?</center>
+                  </h2>
+                  <p class="para1">
+                    Registering for this site allows you to access your order status and history .
+                    Just fill in the fields below , and we'll get a new account set up for you in o time .
+                    We will only ask you for information necessory to make the purchase process faster and easier.
+
+                  </p>
+                  <div class="container" style="background-color:#f1f1f1">
+                    <center><button class="bg"><span class="psw"><a href="#">Create An Account</a></span></button>
+                    </center>
+                  </div>
+                </div>
+            </form>
+          </div>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================slides====================================== -->
+
+  <div id="section1" class="container-fluid">
+
+    <div class="slideshow-container">
+      <div class="mySlides fade ">
+        <div class="numbertext">1 / 3</div>
+        <img src="img/pic4.jpg" style="width:100%">
+        <div class="text">STYLE <br> YOUR <br> CONFIDENCE</div>
+      </div>
+
+      <div class=mySlides fade ">
+              <div class=" numbertext">2 / 3</div>
+      <img src="img/3.png" style="width:100%">
+      <div class="text">NEW COLLECTION <br> ALWAYS <br> -----IN STYLE</div>
+    </div>
+
+    <div class="mySlides fade ">
+      <div class="numbertext">3 / 3</div>
+      <img src="img/pic5.png" style="width:100%">
+      <div class="text"> UNLOCK <br> YOUR <br> STYLE____</div>
+    </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  </div>
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+
+  <!-- =========================intro=========================== -->
+  <div>
+    <BR></BR>
+    <h1 class="header">
+      <center> WELCOME </center>
+    </h1>
+    <p class="para">
+      <b> <span class="color3"> MARIA</span></b> is one of the biggest cities in Pakistan's boutique.
+      It is widely acknowledged as the Manchester of Pakistan due to its large industrial role.
+      The quality of the fabrics produced in this city has no parallel.
+      In fact, the fabric is something of a specialty of Faisalabad.
+      Many people from all over the country flock to this city for a spot of cloth shopping.
+      We aim to provide you all of the best clothes at our boutique .
+    </p>
+
+    <!-- =================================new arrival=============================== -->
+
+    <br>
+    <div id="section2" class="container-fluid">
+      <h2 class="heading">NEW ARRIVAL</h2> <br>
+      <div class="responsive">
+        <div class="gallery">
+          <img src="img/top2.jpg" width="600" height="400">
+          <p>
+            <center> Short Embriodered Top</center>
+          </p>
+          <p class="rs">Rs: 1,099-</p>
+          <p class="button">Add to Cart</p>
+        </div>
+      </div>
+
+
+      <div class="responsive">
+        <div class="gallery">
+          <img src="img/top7.jpg" width="600" height="400">
+          <p>
+            <center> Short Embriodered Top</center>
+          </p>
+          <p class="rs">Rs: 1,099/-</p>
+          <p class="button">Add to Cart</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <img src="img/top5.jpg" width="600" height="400">
+          <p>
+            <center> Short Embriodered Top</center>
+          </p>
+          <p class="rs">Rs: 1,099/-</p>
+          <p class="button">Add to Cart</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <img src="img/top4.jpg" width="600" height="400">
+          <p>
+            <center> Short Embriodered Top</center>
+          </p>
+          <p class="rs">Rs: 1,099/-</p>
+          <p class="button">Add to Cart</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <!-- ========================baby boy====================== -->
+
+    <div id="section3" class="container-fluid">
+      <h2 class="heading">KID'S WEAR</h2> <br>
+      <p class="para">
+        We are a specialized wholesaler of kids like both girls & boys salwar kameez in very reasonable price range & we
+        use to supply these readymade kids shalwar kameez wears to all over the world.
+        <BR></BR>
+        Our specialty is both in fabric/embroidery/designing & quality. Our major trait while stitching kids shalwar
+        kameez is its trendy designing moreover you can find us that our kid’s shalwar kameez quality is not less then
+        khaadi boys, Junaid Jamshid kids section.
+      </p>
+      <br>
+      <div class="responsive">
+        <div class="gallery">
+          <img src="img/baby6.jpg" width="600" height="400">
+          <p>
+            <center> Pant Shirt</center>
+          </p>
+          <p class="rs">Rs: 3,500/-</p>
+          <p class="button">Add to Cart</p>
+        </div>
+      </div>
+
+
+      <div class="responsive">
+        <div class="gallery">
+          <img src="img/baby1.jpg" width="600" height="400">
+          <p>
+            <center> Shirt</center>
+          </p>
+          <p class="rs">Rs: 1,100/-</p>
+          <p class="button">Add to Cart</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <img src="img/baby2.jpg" width="600" height="400 ">
+          <p>
+            <center> Pant Shirt</center>
+          </p>
+          <p class="rs">Rs: 2,000/-</p>
+          <p class="button">Add to Cart</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <img src="img/baby3.jpg" width="600" height="400">
+          <p>
+            <center> Pant Shirt</center>
+          </p>
+          <p class="rs">Rs: 4,000/-</p>
+          <p class="button">Add to Cart</p>
+        </div>
+      </div>
+
+    </div>
+    <br>
+
+    <!-- ================baby girl============== -->
+    <div id="section3" class="container-fluid">
+      <div class="responsive">
+        <div class="gallery">
+          <img src="img/bg12.jpg" width="600" height="400">
+          <p>
+            <center> Top</center>
+          </p>
+          <p class="rs">Rs: 1,800/-</p>
+          <p class="button">Add to Cart</p>
+        </div>
+      </div>
+
+
+      <div class="responsive">
+        <div class="gallery">
+          <img src="img/bg10.jpg" width="600" height="400">
+          <p>
+            <center> Top</center>
+          </p>
+          <p class="rs">Rs: 1,300/-</p>
+          <p class="button">Add to Cart</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <img src="img/bg11.jpg" width="600" height="400 ">
+          <p>
+            <center> Frok</center>
+          </p>
+          <p class="rs">Rs: 1,200/-</p>
+          <p class="button">Add to Cart</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <img src="img/bg4.jpg" width="600" height="400">
+          <p>
+            <center> Frok</center>
+          </p>
+          <p class="rs">Rs: 1,500/-</p>
+          <p class="button">Add to Cart</p>
+        </div>
+      </div>
+
+    </div>
+    <br>
+
+
+
+    <!-- ========================MAN'S kurta====================== -->
+    <div id="section4" class="container-fluid">
+      <h2 class="heading">MAN'S WEAR</h2> <br>
+      <p class="para">
+        Islamic tradition and our culture both teach men to dress up in a masculine way and not to copy west. With an
+        increase in awareness, every male is searching the web and looking forward to gents shalwar kameez style, gents
+        shalwar kameez designs and gents shalwar kameez colors.
+        <BR></BR>
+        If you are also one of those who likes to wear ethnic dresses and searching for latest gents shalwar kameez
+        design, then do check the latest designer men shalwar kameez collection.
+      </p>
+      <br>
+      <div class="responsive">
+        <div class="gallery">
+          <img src="img/man5.png" width="600" height="400">
+          <p>
+            <center> Unstitched Kurta</center>
+          </p>
+          <p class="rs">Rs: 3000/-</p>
+          <p class="button">Add to Cart</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <img src="img/man4.png" width="600" height="400">
+          <p>
+            <center> Unstitched Kurta</center>
+          </p>
+          <p class="rs">Rs: 3000/-</p>
+          <p class="button">Add to Cart</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <img src="img/man6.jpeg" width="600" height="400 ">
+          <p>
+            <center> Unstitched Kurta</center>
+          </p>
+          <p class="rs">Rs: 3000/-</p>
+          <p class="button">Add to Cart</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <img src="img/man9.png" width="600" height="400">
+          <p>
+            <center> Unstitched Kurta</center>
+          </p>
+          <p class="rs">Rs: 3000/-</p>
+          <p class="button">Add to Cart</p>
+        </div>
+      </div>
+
+    </div>
+    <br>
+
+    <!-- =======================man shirt======================================== -->
+
+    <div id="section4" class="container-fluid">
+      <div class="responsive">
+        <div class="gallery">
+          <img src="img/m.shirt4.jpg" width="600" height="400">
+          <p>
+            <center>Multicolor Jacket</center>
+          </p>
+          <p class="rs">Rs:1,500/-</p>
+          <p class="button">Add to Cart</p>
+        </div>
+      </div>
+
+
+      <div class="responsive">
+        <div class="gallery">
+          <img src="img/m.shirt6.png" width="600" height="400">
+          <p>
+            <center>White & Grey Coat</center>
+          </p>
+          <p class="rs">Rs:1,299/-</p>
+
+          <p class="button">Add to Cart</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <img src="img/m.shirt5.png" width="600" height="400 ">
+          <p>
+            <center>Grey Stylish Coat</center>
+          </p>
+          <p class="rs">Rs:1,299/-</p>
+          <p class="button">Add to Cart</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <img src="img/m.shirt7.png" width="600" height="400">
+          <p>
+            <center> Rib Jacket</center>
+          </p>
+          <p class="rs">Rs:2,000/-</p>
+          <p class="button">Add to Cart</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <br>
+  <!-- ===================FOOTER==================== -->
+  <div class="bgfoot">
+    <br>
+    <h3>
+      <center> <span class="color1"> FOLLOW US </span> </center>
+    </h3>
+    <div class="foot">
+      <a class="footer" href="https://www.facebook.com" target="_blank">
+        <i class="fa fa-2x fa-facebook"></i>
+      </a>
+
+      <a class="footer" href="https://www.twitter.com" target="_blank">
+        <i class="fa fa-2x fa-twitter"></i>
+      </a>
+
+      <a class="footer" href="https://www.instagram.com" target="_blank">
+        <i class="fa fa-2x fa-instagram"></i>
+      </a>
+
+      <a class="footer" href="https://www.youtube.com" target="_blank">
+        <i class="fa fa-2x fa-youtube"></i>
+      </a>
+      <br>
+    </div>
+    <h3>
+      <center> @ Copyright 2020 all rights reserved . Powered by <span class="color1"> MARIA</span></center>
+    </h3>
+    <br>
+  </div>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
